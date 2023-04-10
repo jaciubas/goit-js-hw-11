@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Search awesome photoes</title>
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./images/favicon-16x16.png"
+  />
+    <link rel="stylesheet" href="./sass/index.css" />
   </head>
   <body>
-    <div class="gallery-wrapper container">
-      <form class="search-form" id="search-form">
-        <input
-          class="search-form__input"
-          type="text"
-          name="searchQuery"
-          autocomplete="off"
-          placeholder="Search images..."
-        />
-        <button class="search-form__btn" type="submit">
-          <img
-            src="./images/search-icon.png"
-            alt="Search icon"
-            width="20"
-            height="20"
-          />
-        </button>
-      </form>
-
-      <div class="gallery cards-set">
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button></form>
+      <div class="gallery">
         <!-- Картки зображень -->
       </div>
-
-      <button type="button" class="load-more">Load more</button>
-    </div>
-
-    <script src="./js/index.js" type="module"></script>
+      <button type="button" class="load-more is-hidden">Load more</button>
+      <button type="button" class="top-btn is-hidden">Go for new search ↑</button>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
